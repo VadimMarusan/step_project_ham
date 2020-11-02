@@ -1,0 +1,586 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.header {
+    background-color: rgba(94, 93, 88, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-logo-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.svg-container {
+    position: relative;
+}
+
+.logo-svg {
+    margin-right: 5px;
+}
+
+
+.svg-h {
+    width: 16px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    left: 13px;
+    top: 13px;
+}
+
+.logo-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.logo-name span {
+    color: #18CFAB;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 20px;
+    padding: 47px 0px 47px 0px ;
+}
+
+.menu li:hover {
+    border-bottom: solid 2px #18CFAB;
+    padding-bottom: 45px;
+    color: #18CFAB;
+}
+
+.menu li:first-child {
+    margin-left: 0px;
+}
+
+.menu li a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+.menu li:hover a {
+    color: #18CFAB;
+}
+
+.search {
+    margin-left: 20px;
+    fill: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+.search:hover {
+    fill: #18CFAB;
+    cursor: pointer;
+}
+
+.we-are-creative {
+    height: 1012px;
+    background: url(../img/bg/bg1.jpg) fixed center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.we-are-title1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+.we-are-title1 span {
+    color: #18CFAB;
+}
+
+.we-are-title2 {
+    font-weight: 700;
+    font-size: 78px;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+}
+
+.we-are-title3 {
+    font-size: 35px;
+    color: #d0cece;
+}
+
+.container-buttons {
+    margin-top: 150px;
+}
+
+.we-are-button1, .we-are-button2, .install-now-button {
+    width: 174px;
+    height: 65px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 5px solid white;
+}
+
+.we-are-button1 {
+    background-color: #18CFAB;
+    margin-right: 23px;
+}
+
+.we-are-button2 {
+    background-color: #00CBF6;
+;
+}
+
+.options {
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+
+}
+
+.option-block1, .option-block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-block1 {
+    background-color: #1C2A33;
+}
+
+.option-block2 {
+    background-color: #18CFAB;
+}
+
+.option-img-title1, .option-img-title2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.option-img-title1 {
+    color:#18CFAB;
+}
+
+.option-img-title2 {
+    color:#ffffff;
+}
+
+.our-services {
+    height: 570px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.container-title-line {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.section-title-line1, .section-title-line2{
+    width: 78px;
+    height: 1px;
+    border-top: 2px solid #18CFAB;
+}
+
+.section-title-line2 {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.our-services-content-container1 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.our-services-item {
+    background: #F8FCFE;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid #EDEFEF;
+    border-bottom: 1px solid #EDEFEF;
+    border-left: 1px solid #EDEFEF;
+    padding: 30px 10px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #18CFAB;
+    position: absolute;
+    bottom: -15px;
+    right: 80px;
+    display: none;
+}
+
+.our-services-item:hover {
+    background-color: #18CFAB;
+    cursor: pointer;
+    color: white;
+}
+
+.our-services-item:hover .triangle {
+    display: block;
+    cursor: pointer;
+}
+
+.our-services-item:last-child {
+    border-right: 1px solid #EDEFEF;
+}
+
+.our-services-content-container2 {
+    display: grid;
+    grid-template-columns: 192px 1fr;
+    grid-gap: 15px;
+    margin-top: 28px;
+}
+
+
+.services-content {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+    line-height: 24px;
+}
+
+.install-now {
+    height: 476px;
+    background-image: url(../img/bg/bg2.jpg);
+    background-position: center;
+    position: relative;
+}
+
+.install-now-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.install-now::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.7);
+
+}
+
+.title-install-now {
+    font-size: 40px;
+    font-weight: 700;
+    color: #18CFAB;
+    text-transform: uppercase;
+}
+
+.install-now-description {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #D8D8D8;
+}
+
+.install-now-button {
+    margin-top: 67px;
+    background-color: #18CFAB;
+}
+
+.our-amazing-work {
+    background-color: #E9EDEF;
+    padding-bottom: 80px;
+}
+
+.our-img {
+    max-width: 285px;
+    min-height: 206px;
+}
+
+.display-none {
+    display: none;
+}
+
+.our-amazing-menu {
+    display: grid;
+    grid-template-columns: 80px repeat(4,1fr);
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.amazing-item {
+    padding: 10px 10px;
+    border-top: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #717171;
+}
+
+.amazing-item:hover {
+    border: 1px solid #18CFAB;
+    cursor: pointer;
+    color: #18CFAB;
+}
+
+.amazing-item:last-child {
+    border-right: 1px solid #DADADA;
+}
+.amazing-item:last-child:hover {
+    border: 1px solid #18CFAB;
+    cursor: pointer;
+}
+
+.our-amazing-work-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 85px;
+}
+
+.our-amazing-work-content-item {
+    position: relative;
+}
+
+.our-amazing-work-content-item img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.our-amazing-work-content-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E9EDEF;
+    display: none;
+}
+
+.our-amazing-work-content-item:hover:before  {
+    display: block;
+    border-top: 6px solid #18CFAB;
+    cursor: pointer;
+}
+
+.our-amazing-work-content-item:hover .amazing-item-title, .our-amazing-work-content-item:hover .amazing-work-icon, .our-amazing-work-content-item:hover .amazing-item-description   {
+    display: block;
+    cursor: pointer;
+}
+
+.amazing-work-icon, .amazing-item-title, .amazing-item-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+   display: none;
+}
+
+
+.amazing-work-icon {
+    margin-top: 50px;
+    margin-left: 95px;
+}
+
+.amazing-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #18CFAB;
+    text-transform: uppercase;
+    margin-left: 75px;
+    margin-top: 130px;
+}
+
+.amazing-item-description {
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 105px;
+    margin-top: 160px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.load-more-button {
+    width: 168px;
+    height: 63px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #18CFAB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-image: url(../img/section_our_amazing_work/loadmore.png);
+    background-repeat: no-repeat;
+    background-position: 25px 23px;
+    text-indent: 30px;
+    cursor: pointer;
+}
+
+.breaking-news {
+    height: 880px;
+}
+
+.breaking-news-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    margin-top: 68px;
+}
+.breaking-news-content-item {
+    width: 263px;
+}
+
+.breaking-news-content-item:hover {
+    cursor: pointer;
+}
+
+.breaking-news-content-item:hover .breaking-news-item-date   {
+    background-color: #18CFAB;
+}
+
+.breaking-news-content-item:hover .breaking-news-item-title {
+    color: #18CFAB;
+}
+
+.breaking-news-img {
+    position: relative;
+}
+
+
+.breaking-news-item-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 68px;
+    background-color: #000;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.breaking-news-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.breaking-news-item-description {
+    color: #777777;
+    font-size: 14px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.breaking-news-item-description li {
+    padding: 0px 20px;
+}
+
+.breaking-news-item-description li:first-child {
+    border-right: 1px solid #777777;
+}
+
+.about-the-ham {
+    height: 853px;
+    background-image: url(../img/bg/bg3.jpg);
+    background-position: center;
+}
+
+.h3-about-the-ham {
+    color: white;
+}
+
+footer {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #AEAEAE;
+    background: #22353F;
+    padding: 40px;
+}
+
+footer span {
+    color: #18CFAB;
+}
+
+
+
+
+
+
+
+
+
