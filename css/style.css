@@ -3,9 +3,8 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
-    padding: 0px 20px;
     position: relative;
 }
 
@@ -182,6 +181,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .option-block1 {
@@ -239,6 +239,7 @@ body {
 .our-services-content-container1 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    margin-top: 70px;
 }
 
 .our-services-item {
@@ -250,32 +251,30 @@ body {
     border-bottom: 1px solid #EDEFEF;
     border-left: 1px solid #EDEFEF;
     padding: 30px 10px;
-    margin-top: 70px;
     position: relative;
+    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 55% 90%, 50% 100%, 50% 100%, 45% 90%, 0 90%, 0 0);
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #18CFAB;
-    position: absolute;
-    bottom: -15px;
-    right: 80px;
+.services-content-li {
     display: none;
 }
 
-.our-services-item:hover {
+.our-services-item:hover, .our-services-item-active {
     background-color: #18CFAB;
     cursor: pointer;
     color: white;
 }
 
-.our-services-item:hover .triangle {
+
+.our-services-item:hover{
     display: block;
     cursor: pointer;
 }
+
+.active{
+    display: block;
+}
+
 
 .our-services-item:last-child {
     border-right: 1px solid #EDEFEF;
@@ -375,7 +374,7 @@ body {
     color: #717171;
 }
 
-.amazing-item:hover {
+.amazing-item:hover, .amazing-item-active {
     border: 1px solid #18CFAB;
     cursor: pointer;
     color: #18CFAB;
@@ -383,6 +382,10 @@ body {
 
 .amazing-item:last-child {
     border-right: 1px solid #DADADA;
+}
+
+.amazing-item-active:last-child {
+    border: 1px solid #18CFAB;
 }
 .amazing-item:last-child:hover {
     border: 1px solid #18CFAB;
@@ -420,7 +423,6 @@ body {
 .our-amazing-work-content-item:hover:before  {
     display: block;
     border-top: 6px solid #18CFAB;
-    cursor: pointer;
 }
 
 .our-amazing-work-content-item:hover .amazing-item-title, .our-amazing-work-content-item:hover .amazing-work-icon, .our-amazing-work-content-item:hover .amazing-item-description   {
@@ -439,6 +441,18 @@ body {
 .amazing-work-icon {
     margin-top: 50px;
     margin-left: 95px;
+}
+
+.fa-link, .fa-square {
+    padding: 13px;
+    border-radius: 50%;
+    border: 1px solid #18CFAB;
+    color: #18CFAB;
+}
+
+.fa-link:hover, .fa-square:hover {
+    background-color: #18CFAB;
+    color: white;
 }
 
 .amazing-item-title {
@@ -553,9 +567,21 @@ body {
 }
 
 .about-the-ham {
-    height: 853px;
+    padding-bottom: 50px;
     background-image: url(../img/bg/bg3.jpg);
     background-position: center;
+    position: relative;
+}
+
+.about-the-ham::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+
 }
 
 .h3-about-the-ham {
@@ -575,6 +601,75 @@ footer {
 footer span {
     color: #18CFAB;
 }
+
+.draggable {
+    padding: 0px  80px 0px 20px !important;
+}
+
+.slider {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.slider-for-description {
+    color: #bbb;
+}
+
+.slider-for-description, .slider-for-name, .slider-for-job  {
+    margin-left: 60px;
+}
+
+.slider-for-name {
+    margin-top: 40px;
+    color: #18CFAB;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider-for-job {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #bbbbbb;
+    line-height: 40px;
+}
+
+.slider-for-img {
+    padding-left: 30px;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    top: 30px;
+}
+
+
+.slider-nav {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.slider-nav div img {
+    border: 5px solid rgba(31, 218, 181, 0.2);
+    border-radius: 50%;
+}
+
+.slider-for-item img  {
+    margin-top: 30px;
+    width: 140px;
+    border: 10px solid rgba(31, 218, 181, 0.2);
+    border-radius: 50%;
+}
+
+.slider-nav-item, .slider-for-item  {
+    border: none;
+    outline: none;
+}
+
+.commas {
+    margin-top: 70px;
+    text-align: center;
+}
+
 
 
 

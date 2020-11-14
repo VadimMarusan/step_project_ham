@@ -5,6 +5,9 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,10 +15,10 @@
     <div class="container header-logo-menu-container">
         <div class="logo-container">
             <div class="svg-container">
-            <div class="logo-svg">
-                <img src="img/header/polygon.png" alt="1">
-            </div>
-            <div class="svg-h">H</div>
+                <div class="logo-svg">
+                    <img src="img/header/polygon.png" alt="1">
+                </div>
+                <div class="svg-h">H</div>
             </div>
             <div class="logo-name">the<span>Ham</span></div>
         </div>
@@ -76,46 +79,99 @@
             <div class="section-title-line1"></div>
             <div class="section-title-line2"></div>
         </div>
-            <ul class="our-services-content-container1">
-                <li id="web-design" class="our-services-item">
-                    <span class="web-design">Web Design</span>
-                    <div class="triangle"></div>
-                </li>
-                <li id="graphic-design" class="our-services-item">
-                    <span class="graphic-design">Graphic Design</span>
-                    <div class="triangle"></div>
-                </li>
-                <li id="online-support" class="our-services-item">
-                    <span class="online-support">Online Support</span>
-                    <div class="triangle"></div>
-                </li>
-                <li id="app-design" class="our-services-item">
-                    <span class="app-design">App Design</span>
-                    <div class="triangle"></div>
-                </li>
-                <li id="online-marketing" class="our-services-item">
-                    <span class="online-marketing">Online Marketing</span>
-                    <div class="triangle"></div>
-                </li>
-                <li id="seo-service" class="our-services-item">
-                    <span class="seo-service">Seo Service</span>
-                    <div class="triangle"></div>
-                </li>
-            </ul>
+        <ul class="our-services-content-container1">
+            <li class="our-services-item our-services-item-active" data-tab="web-design">
+                Web Design
+            </li>
+            <li class="our-services-item" data-tab="graphic-design">
+                Graphic Design
+            </li>
+            <li class="our-services-item" data-tab="online-support">
+                Online Support
+            </li>
+            <li class="our-services-item" data-tab="app-design">
+                App Design
+            </li>
+            <li class="our-services-item" data-tab="online-marketing">
+                Online Marketing
+            </li>
+            <li class="our-services-item" data-tab="seo-service">
+                Seo Service
+            </li>
+        </ul>
         <div class="our-services-content-container2">
             <div class="services-content-img">
                 <img id="services-content-img" src="img/section_our_services/1.png" alt="a">
             </div>
-            <div class="services-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <ul class="services-content">
+                <li data-content="web-design" class="services-content-li active">
+                    Web design encompasses many different skills and disciplines in the production and maintenance of
+                    websites. The different areas of web design include web graphic design; interface design; authoring,
+                    including standardised code and proprietary software; user experience design; and search engine
+                    optimization. Often many individuals will work in teams covering different aspects of the design
+                    process, although some designers will cover them all.[1] The term "web design" is normally used to
+                    describe the design process relating to the front-end (client side) design of a website including
+                    writing markup. Web design partially overlaps web engineering in the broader scope of web
+                    development. Web designers are expected to have an awareness of usability and if their role involves
+                    creating markup then they are also expected to be up to date with web accessibility guidelines.
+                </li>
+                <li data-content="graphic-design" class="services-content-li">
+                    Graphic design is the process of visual communication through the use of typography, photography,
+                    iconography and illustration. The field is considered a subset of visual communication and
+                    communication design, but sometimes the term "graphic design" is used synonymously. Graphic
+                    designers create and combine symbols, images and text to form visual representations of ideas and
+                    messages.
+                </li>
+                <li data-content="online-support" class="services-content-li">
+                    Technical support (often shortened to tech support) refers to services that entities provide to
+                    users of technology products or services. In general, technical support provides help regarding
+                    specific problems with a product or service, rather than providing training, provision or
+                    customization of product, or other support services. Most companies offer technical support for the
+                    services or products they sell, either included in the cost or for an additional fee. Technical
+                    support may be delivered by phone, e-mail, live support software on a website, or other tools where
+                    users can log an incident. Larger organizations frequently have internal technical support available
+                    to their staff for computer-related problems. The Internet can also be a good source for freely
+                    available tech support, where experienced users help users find solutions to their problems.[not
+                    verified in body] In addition, some fee-based service companies charge for premium technical support
+                    services.
+                </li>
+                <li data-content="app-design" class="services-content-li">
+                    A mobile application, also referred to as a mobile app or simply an app, is a computer program or
+                    software application designed to run on a mobile device such as a phone, tablet, or watch. Apps were
+                    originally intended for productivity assistance such as email, calendar, and contact databases, but
+                    the public demand for apps caused rapid expansion into other areas such as mobile games, factory
+                    automation, GPS and location-based services, order-tracking, and ticket purchases, so that there are
+                    now millions of apps available. Apps are generally downloaded from application distribution
+                    platforms which are operated by the owner of the mobile operating system, such as the App Store
+                    (iOS) or Google Play Store. Some apps are free, and others have a price, with the profit being split
+                    between the application's creator and the distribution platform. Mobile applications often stand in
+                    contrast to desktop applications which are designed to run on desktop computers, and web
+                    applications which run in mobile web browsers rather than directly on the mobile device.
+                </li>
+                <li data-content="online-marketing" class="services-content-li">
+                    Online advertising, also known as online marketing, Internet advertising, digital advertising or web
+                    advertising, is a form of marketing and advertising which uses the Internet to deliver promotional
+                    marketing messages to consumers. Many consumers find online advertising disruptive[1] and have
+                    increasingly turned to ad blocking for a variety of reasons.When software is used to do the
+                    purchasing, it is known as programmatic advertising.
+                </li>
+                <li data-content="seo-service" class="services-content-li">
+                    Search engine optimization (SEO) is the process of improving the quality and quantity of website
+                    traffic to a website or a web page from search engines.[1] SEO targets unpaid traffic (known as
+                    "natural" or "organic" results) rather than direct traffic or paid traffic. Unpaid traffic may
+                    originate from different kinds of searches, including image search, video search, academic
+                    search,[2] news search, and industry-specific vertical search engines.
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 <section class="install-now">
     <div class="container install-now-content">
         <h3 class="title-install-now">Everything is ready. just buy and install now</h3>
-        <div class="install-now-description">Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</div>
+        <div class="install-now-description">Smooth reliable, responsive ready, perfect portfolio, unique blog layout
+            and many many options for you
+        </div>
         <a class="install-now-button" href="#">purchase now</a>
     </div>
 </section>
@@ -127,205 +183,282 @@
             <div class="section-title-line2"></div>
         </div>
         <ul class="our-amazing-menu">
-            <li class="amazing-item">All</li>
-            <li id="graphic_design" class="amazing-item">Graphic Design</li>
-            <li id="web_design" class="amazing-item">Web Design</li>
-            <li id="landing_pages" class="amazing-item">Landing Pages</li>
-            <li id="wordpress" class="amazing-item">Wordpress</li>
+            <li data-tab2="all" class="amazing-item amazing-item-active">All</li>
+            <li data-tab2="graphic_design" class="amazing-item">Graphic Design</li>
+            <li data-tab2="web_design" class="amazing-item">Web Design</li>
+            <li data-tab2="landing_pages" class="amazing-item">Landing Pages</li>
+            <li data-tab2="wordpress" class="amazing-item">Wordpress</li>
         </ul>
         <div class="our-amazing-work-content">
-            <div class="our-amazing-work-content-item ">
+            <div data-content2="graphic_design" class="our-amazing-work-content-item all">
                 <img class="graphic-design-item" src="img/section_our_amazing_work/0-graphic_design.png" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <h4 class="amazing-item-title">creative design</h4>
+                    <span class="amazing-item-description">Graphic Design</span>
+            </div>
+            <div data-content2="web_design" class="our-amazing-work-content-item all">
+                <img class="web-design-item" src="img/section_our_amazing_work/1-web_design.png" alt="2">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
-            <div class="our-amazing-work-content-item">
-                <img class="web-design-item" src="img/section_our_amazing_work/1-web_design.png" alt="1">
+            <div data-content2="web_design" class="our-amazing-work-content-item all">
+                <img class="web-design-item" src="img/section_our_amazing_work/2-web_design.png" alt="3">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
-            <div class="our-amazing-work-content-item ">
-                <img class="web-design-item" src="img/section_our_amazing_work/2-web_design.png" alt="1">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item all">
+                <img class="landing-pages-item" src="img/section_our_amazing_work/3-landing_pages.png" alt="4">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4 class="amazing-item-title">creative design</h4>
+                <span class="amazing-item-description">Landing Pages</span>
+            </div>
+            <div data-content2="web_design" class="our-amazing-work-content-item all">
+                <img class="web-design-item" src="img/section_our_amazing_work/4-web_design.png" alt="5">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
-            <div class="our-amazing-work-content-item ">
-                <img class="landing-pages-item" src="img/section_our_amazing_work/3-landing_pages.png" alt="1">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item all">
+                <img class="landing-pages-item" src="img/section_our_amazing_work/5-landing_pages.png" alt="6">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4 class="amazing-item-title">creative design</h4>
+                <span class="amazing-item-description">Landing Pages</span>
+            </div>
+            <div data-content2="wordpress" class="our-amazing-work-content-item all">
+                <img class="wordpress-item" src="img/section_our_amazing_work/6-wordpress.png" alt="7">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4 class="amazing-item-title">creative design</h4>
+                <span class="amazing-item-description">Wordpress</span>
+            </div>
+            <div data-content2="graphic_design" class="our-amazing-work-content-item all">
+                <img class="graphic-design-item" src="img/section_our_amazing_work/7-graphic_design.png" alt="8">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4 class="amazing-item-title">creative design</h4>
+                <span class="amazing-item-description">Graphic Design</span>
+            </div>
+            <div data-content2="wordpress" class="our-amazing-work-content-item all">
+                <img class="wordpress-item" src="img/section_our_amazing_work/8-wordpress.png" alt="9">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4 class="amazing-item-title">creative design</h4>
+                <span class="amazing-item-description">Wordpress</span>
+            </div>
+            <div data-content2="web_design" class="our-amazing-work-content-item all">
+                <img class="web-design-item" src="img/section_our_amazing_work/9-web_design.png" alt="10">
+                <div class="amazing-work-icon">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
-            <div class="our-amazing-work-content-item">
-                <img class="web-design-item" src="img/section_our_amazing_work/4-web_design.png" alt="1">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item all">
+                <img class="landing-pages-item" src="img/section_our_amazing_work/10-landing_pages.png" alt="11">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Landing Pages</span>
             </div>
-            <div class="our-amazing-work-content-item">
-                <img class="landing-pages-item" src="img/section_our_amazing_work/5-landing_pages.png" alt="1">
+            <div data-content2="web_design" class="our-amazing-work-content-item all">
+                <img class="web-design-item" src="img/section_our_amazing_work/11-web_design.png" alt="12">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="wordpress-item" src="img/section_our_amazing_work/6-wordpress.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="graphic-design-item" src="img/section_our_amazing_work/7-graphic_design.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="wordpress-item" src="img/section_our_amazing_work/8-wordpress.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="web-design-item" src="img/section_our_amazing_work/9-web_design.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="landing-pages-item" src="img/section_our_amazing_work/10-landing_pages.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
-                </div>
-                <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
-            </div>
-            <div class="our-amazing-work-content-item">
-                <img class="web-design-item" src="img/section_our_amazing_work/11-web_design.png" alt="1">
-                <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
 
-            <div class="our-amazing-work-content-item display-none">
-                <img  class="our-img graphic-design-item" src="img/section_our_amazing_work/24-graphic_design.png" alt="1">
+            <div data-content2="graphic_design" class="our-amazing-work-content-item display-none">
+                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/24-graphic_design.png"
+                     alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Graphic Design</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="wordpress" class="our-amazing-work-content-item display-none">
                 <img class="our-img wordpress-item" src="img/section_our_amazing_work/23-wordpress.png" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Wordpress</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
-                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/22-graphic_design.png" alt="1">
+            <div data-content2="graphic_design" class="our-amazing-work-content-item display-none">
+                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/22-graphic_design.png"
+                     alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Graphic Design</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item display-none">
                 <img class="our-img landing-pages-item" src="img/section_our_amazing_work/21-landing_pages.jpg" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Landing Pages</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="wordpress" class="our-amazing-work-content-item display-none">
                 <img class="our-img wordpress-item" src="img/section_our_amazing_work/20-wordpress.jpg" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Wordpress</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="wordpress" class="our-amazing-work-content-item display-none">
                 <img class="our-img wordpress-item" src="img/section_our_amazing_work/19-wordpress.jpg" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Wordpress</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
-                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/18-graphic_design.jpg" alt="1">
+            <div data-content2="graphic_design" class="our-amazing-work-content-item display-none">
+                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/18-graphic_design.jpg"
+                     alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Graphic Design</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
-                <img class="our-img landing-pages-item" src="img/section_our_amazing_work/17-landing_pages.jpeg" alt="1">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item display-none">
+                <img class="our-img landing-pages-item" src="img/section_our_amazing_work/17-landing_pages.jpeg"
+                     alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Landing Pages</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="wordpress" class="our-amazing-work-content-item display-none">
                 <img class="our-img wordpress-item" src="img/section_our_amazing_work/16-wordpress.jpg" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Wordpress</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="web_design" class="our-amazing-work-content-item display-none">
                 <img class="our-img web-design-item" src="img/section_our_amazing_work/15-web_design.png" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
                 <span class="amazing-item-description">Web Design</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
-                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/14-graphic_design.png" alt="1">
+            <div data-content2="graphic_design" class="our-amazing-work-content-item display-none">
+                <img class="our-img graphic-design-item" src="img/section_our_amazing_work/14-graphic_design.png"
+                     alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Graphic Design</span>
             </div>
-            <div class="our-amazing-work-content-item display-none">
+            <div data-content2="landing_pages" class="our-amazing-work-content-item display-none">
                 <img class="our-img landing_pages-item" src="img/section_our_amazing_work/13-landing_pages.jpg" alt="1">
                 <div class="amazing-work-icon">
-                    <img src="img/section_our_amazing_work/icon.png" alt="">
+                    <div class="amazing-work-icons">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        <i class="fa fa-square" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <h4 class="amazing-item-title">creative design</h4>
-                <span class="amazing-item-description">Web Design</span>
+                <span class="amazing-item-description">Landing Pages</span>
             </div>
         </div>
         <div class="button-container">
@@ -453,9 +586,6 @@
                     <li>2 comment</li>
                 </ul>
             </a>
-
-
-
         </div>
     </div>
 </section>
@@ -466,6 +596,68 @@
             <div class="section-title-line1"></div>
             <div class="section-title-line2"></div>
         </div>
+        <div class="commas">
+            <img src="img/slider/combined_shape%202474.png" alt="">
+        </div>
+        <div class="slider-content">
+            <div class="slider slider-for">
+                <div class="slider-for-item">
+                    <span class=" slider-for-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque facere fuga nulla quis sequi, sunt vero! Aliquid amet aspernatur, at, dignissimos distinctio dolore minima pariatur quas reiciendis saepe totam?
+                    </span>
+                    <h2 class="slider-for-name">Mary Jane</h2>
+                    <span class="slider-for-job">HR</span>
+                    <div class="slider-for-img">
+                        <img src="img/slider/s1.png" alt="a1">
+                    </div>
+                </div>
+                <div class="slider-for-item">
+                    <span class="slider-for-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error ipsam ipsum molestias quibusdam, unde. A aliquam aliquid architecto dolore dolorem error, facere itaque labore minima nemo nihil quaerat quia.
+                    </span>
+                    <h2 class="slider-for-name">Hasan Ali</h2>
+                    <span class="slider-for-job">UX Designer</span>
+                    <div class="slider-for-img">
+                        <img src="img/slider/s2.png" alt="a1">
+                    </div>
+                </div>
+                <div class="slider-for-item">
+                    <span class="slider-for-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque consequuntur cupiditate debitis dolore doloribus eum, facilis laborum libero molestias, ratione repudiandae temporibus voluptate! Beatae ea error natus quas? Numquam?
+                    </span>
+                    <h2 class="slider-for-name">Victor Zalupenko</h2>
+                    <span class="slider-for-job">SEO</span>
+                    <div class="slider-for-img">
+                        <img src="img/slider/s3.png" alt="a1">
+                    </div>
+                </div>
+                <div class="slider-for-item">
+                    <span class="slider-for-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis cum et vitae. Adipisci debitis error magni quisquam repellat vel velit. Asperiores debitis dignissimos officiis repudiandae totam! Dolor, eaque, molestiae.
+                    </span>
+                    <h2 class="slider-for-name">Hanna Smith</h2>
+                    <span class="slider-for-job">Developer</span>
+                    <div class="slider-for-img">
+                        <img src="img/slider/s4.png" alt="a1">
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider slider-nav">
+                <div class="slider-nav-item" style="width: 60px; height: 60px">
+                    <img src="img/slider/s1.png" alt="a1">
+                </div>
+                <div class="slider-nav-item">
+                    <img src="img/slider/s2.png" alt="a1">
+                </div>
+                <div class="slider-nav-item">
+                    <img src="img/slider/s3.png" alt="a1">
+                </div>
+                <div class="slider-nav-item">
+                    <img src="img/slider/s4.png" alt="a1">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <footer>
@@ -473,5 +665,27 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script>
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+    });
+</script>
 </body>
 </html>
